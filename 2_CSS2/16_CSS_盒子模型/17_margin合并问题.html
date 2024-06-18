@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>17_margin合并问题</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+        .box1 {
+            background-color: deepskyblue;
+            /* margin-bottom: 110px; */
+        }
+        .box2 {
+            background-color: orange;
+            margin-top: 110px;
+        }
+        .test {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+        .testa {
+            background-color: purple;
+            margin-right: 50px;
+        }
+        .testb {
+            background-color: tomato;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <hr>
+    <div class="test testa">a</div><div class="test testb">b</div>
+</body>
+</html>

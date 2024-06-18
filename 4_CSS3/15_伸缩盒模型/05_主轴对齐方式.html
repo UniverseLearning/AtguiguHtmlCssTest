@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>05_主轴对齐方式</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 600px;
+            background-color: #888;
+            margin: 0 auto;
+
+            /* 伸缩盒模型相关属性-start */
+
+            /* 将该元素变为了伸缩容器（开启了flex布局） */
+            display: flex;
+
+            /* 调整主轴方向，水平从左到右，默认 */
+            flex-direction: row;
+
+            /* 主轴换行方式，换行 */
+            flex-wrap: wrap;
+
+            /* 主轴的对齐方式，主轴的起始位置 */
+            /* justify-content: flex-start; */
+
+             /* 主轴的对齐方式，主轴的结束位置 */
+             /* justify-content: flex-end; */
+
+             /* 主轴的对齐方式，中间对齐 */
+             /* justify-content: center; */
+
+             /* 主轴的对齐方式，项目均匀的分布在一行中，项目与项目之间的距离，是项目距边缘的二倍 */
+            /* justify-content: space-around; */
+
+             /* 主轴的对齐方式，项目均匀的分布在一行中，项目与项目之间的距离是相等的，项目距边缘没有距离 */
+            justify-content: space-between;
+
+            /* 主轴的对齐方式，项目均匀的分布在一行中 */
+            /* justify-content: space-evenly; */
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">1</div>
+        <div class="inner">2</div>
+        <div class="inner">3</div>
+    </div>
+</body>
+</html>

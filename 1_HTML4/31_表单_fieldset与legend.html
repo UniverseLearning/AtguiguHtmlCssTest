@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>表单_fieldset与legend</title>
+</head>
+<body>
+    <form action="https://search.jd.com/search">
+        <!-- 主要信息 -->
+        <fieldset>
+            <legend>主要信息</legend>
+            <label for="zhanghu">账户：</label>
+            <input id="zhanghu" type="text" name="account" maxlength="10"><br>
+            <label>
+                密码：
+                <input id="mima" type="password" name="pwd" maxlength="6">
+            </label>
+            <br>
+            性别：
+            <input type="radio" name="gender" value="male" id="nan">
+            <label for="nan">男</label> 
+            <label>
+                <input type="radio" name="gender" value="female" id="nv">女
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>附加信息</legend>
+            爱好：
+            <label>
+                <input type="checkbox" name="hobby" value="smoke">抽烟
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="drink">喝酒
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="perm">烫头
+            </label><br>
+            <label for="qita">其他：</label>
+            <textarea id="qita" name="other" cols="23" rows="3"></textarea><br>
+            籍贯：
+            <select name="place">
+                <option value="冀">河北</option>
+                <option value="鲁">山东</option>
+                <option value="晋">山西</option>
+                <option value="粤">广东</option>
+            </select>
+        </fieldset>
+        <input type="hidden" name="from" value="toutiao">
+        <br>
+        <input type="submit" value="确认">
+        <input type="reset" value="点我重置">
+        <input type="button" value="检测账户是否被注册">
+    </form>
+</body>
+</html>

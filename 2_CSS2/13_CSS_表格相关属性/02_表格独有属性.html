@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>02_表格独有属性</title>
+    <style>
+        table {
+            border:2px green solid;
+            width:500px;
+            /* 控制表格的列宽 */
+            table-layout: fixed;
+            /* 控制单元格间距（生效的前提是：不能合并边框） */
+            border-spacing: 10px;
+            /* 合并相邻的单元格的边框 */
+            border-collapse: collapse;
+            /* 隐藏没有内容的单元格（生效的前提是：不能合并边框） */
+            empty-cells: hide;
+            /* 设置表格标题的位置 */
+            caption-side: top;
+        }
+        td,th {
+            border:2px orange solid;
+        }
+        .number {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>人员信息</caption>
+        <thead>
+            <tr>
+                <th class="number">序号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+                <th>政治面貌</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>张三</td>
+                <td>18</td>
+                <td>男</td>
+                <td>党员</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>李四</td>
+                <td>19</td>
+                <td>女</td>
+                <td>团员</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>王五</td>
+                <td>20</td>
+                <td></td>
+                <td>群众</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>赵六</td>
+                <td>21</td>
+                <td>女</td>
+                <td>党员</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

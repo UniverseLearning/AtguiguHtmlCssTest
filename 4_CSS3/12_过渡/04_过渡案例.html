@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>04_过渡案例</title>
+    <style>
+        .outer {
+            width: 400px;
+            height: 224px;
+            position: relative;
+            overflow: hidden;
+        }
+        .mask {
+            width: 400px;
+            height: 224px;
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            line-height: 224px;
+            font-size: 100px;
+            opacity: 0;
+            transition: 1s linear;
+            cursor: pointer;
+        }
+        img {
+            transition: 0.5s linear;
+        }
+        .outer:hover .mask {
+            opacity: 0.5;
+        }
+        .outer:hover img {
+            transform: scale(1.6) rotate(20deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <img src="../images/shanghai.jpg" alt="">
+        <div class="mask">上海</div>
+    </div>
+    <div class="outer">
+        <img src="../images/shanghai.jpg" alt="">
+        <div class="mask">上海</div>
+    </div>
+</body>
+</html>

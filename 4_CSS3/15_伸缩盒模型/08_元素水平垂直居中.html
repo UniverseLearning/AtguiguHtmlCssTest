@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>08_元素水平垂直居中</title>
+    <style>
+        .outer {
+            width: 400px;
+            height: 400px;
+            background-color: #888;
+            display: flex;
+
+            /* 方案一 */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            /* 方案二 */
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

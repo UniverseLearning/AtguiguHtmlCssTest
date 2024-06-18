@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>01_基本使用</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        /* 定义一个动画（定义一组关键帧）—— 第一种方式 */
+        @keyframes wangyoudong {
+            /* 第一帧 */
+            from {
+                
+            }
+            /* 最后一帧 */
+            to {
+                transform: translate(900px);
+                background-color: red;
+            }
+        }
+        /* 定义一个动画（定义一组关键帧）—— 第二种方式 */
+        @keyframes wangyoudong2 {
+            /* 第一帧 */
+            0% {
+
+            }
+            /* 29% {
+              background-color: red;  
+            } */
+            /* 48% {
+                background-color: orange;
+            } */
+            /* 88% {
+                background-color: yellow;
+            } */
+            /* 最后一帧 */
+            100% {
+                transform: translate(900px) rotate(360deg);
+                background-color: purple;
+                border-radius: 50%;
+            }
+        }
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: deepskyblue;
+            /* 应用动画到元素 */
+            animation-name: wangyoudong2;
+            /* 动画持续的时间 */
+            animation-duration: 3s;
+            /* 动画延迟时间 */
+            animation-delay: 0.2s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

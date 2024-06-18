@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>11_margin的注意事项1</title>
+    <style>
+        .outer {
+            width: 400px;
+            height: 400px;
+            padding: 50px;
+            background-color: gray;
+        }
+        .inner {
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- 子元素的margin是参考父元素的content计算的。 -->
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

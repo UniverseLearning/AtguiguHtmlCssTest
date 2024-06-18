@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>03_媒体查询_运算符</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            height: 200px;
+            background-color: gray;
+            text-align: center;
+            line-height: 200px;
+            font-size: 100px;
+        }
+
+        /* 且运算符 */
+        /* @media (min-width:700px) and (max-width:800px) {
+            h1 {
+                background-color: orange;
+            }
+        } */
+        /* @media screen and (min-width:700px) and (max-width:800px) {
+            h1 {
+                background-color: orange;
+            }
+        } */
+
+        /* 或运算符 */
+        /* @media screen and (max-width:700px) or (min-width:800px) {
+            h1 {
+                background-color: orange;
+            }
+        } */
+
+        /* 否定运算符 */
+        /* @media not screen {
+            h1 {
+                background-color: orange;
+            }
+        } */
+
+        /* 肯定运算符 */
+        @media only screen and (width:800px) {
+            h1 {
+                background-color: orange;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>你好啊</h1>
+</body>
+</html>

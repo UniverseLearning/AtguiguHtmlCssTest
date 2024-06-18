@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>01_交集选择器</title>
+    <style>
+        /* 选中类名为rich的元素*/
+        .rich {
+            color: gold;
+        }
+        /* 选中类名为beauty的元素*/
+        .beauty {
+            color: red;
+        }
+        /* 选中类名为beauty的p元素，这种形式（元素配合类选择器）以后用的很多！！ */
+        p.beauty {
+            color: green;
+        }
+        /* 选中同时具备rich和beauty类名的元素 */
+        .rich.beauty {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="rich">土豪张三</h2>
+    <h2 class="beauty">明星李四</h2>
+    <h2 class="rich beauty">土豪明星王五</h2>
+    <hr>
+    <p class="beauty">小狗旺财</p>
+    <p class="beauty">小猪佩奇</p>
+</body>
+</html>

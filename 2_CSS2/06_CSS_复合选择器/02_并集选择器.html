@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>02_并集选择器</title>
+    <style>
+        .rich {
+            color: gold;
+        }
+        .beauty {
+            color: red;
+        }
+        .dog {
+            color: blue;
+        }
+        .pig {
+            color: green;
+        }
+        /* 选中类名为：rich或beauty或dog或pig或id为suxi的元素*/
+        .rich,
+        .beauty,
+        .dog,
+        .pig,
+        #suxi {
+            font-size: 40px;
+            background-color: gray;
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="rich">土豪张三</h2>
+    <h2 class="beauty">明星李四</h2>
+    <h2>破产王五（不加任何样式）</h2>
+    <hr>
+    <p class="dog">小狗旺财</p>
+    <p class="pig">小猪佩奇</p>
+    <p id="suxi">小羊苏西</p>
+</body>
+</html>

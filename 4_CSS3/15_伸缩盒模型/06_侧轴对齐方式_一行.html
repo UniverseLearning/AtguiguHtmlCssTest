@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>06_侧轴对齐方式_一行</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 600px;
+            background-color: #888;
+            margin: 0 auto;
+
+            /* 伸缩盒模型相关属性-start */
+
+            /* 将该元素变为了伸缩容器（开启了flex布局） */
+            display: flex;
+
+            /* 调整主轴方向，水平从左到右，默认 */
+            flex-direction: row;
+
+            /* 主轴换行方式，换行 */
+            flex-wrap: wrap;
+
+            /* 主轴的对齐方式，主轴的起始位置 */
+            justify-content: flex-start;
+
+            /* 侧轴的对齐方式，侧轴的起始位置对齐 */
+            align-items: flex-start;
+
+            /* 侧轴的对齐方式，侧轴的结束位置对齐 */
+            /* align-items: flex-end; */
+
+            /* 侧轴的对齐方式，侧轴的中间位置对齐 */
+            /* align-items: center; */
+
+            /* 侧轴的对齐方式，侧轴的中间位置对齐 */
+            /* align-items: baseline; */
+
+            /* 侧轴的对齐方式，拉伸到整个父容器（前提：伸缩项目不能给高度），默认 */
+            /* align-items: stretch; */
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        .inner2 {
+            height: 300px;
+            font-size: 80px;
+        }
+        .inner3 {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">1x</div>
+        <div class="inner inner2">2x</div>
+        <div class="inner inner3">3x</div>
+    </div>
+</body>
+</html>

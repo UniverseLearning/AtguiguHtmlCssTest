@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>02_background-clip</title>
+    <style>
+        .box1 {
+            width: 400px;
+            height: 400px;
+            background-color: skyblue;
+            margin: 0 auto;
+            font-size: 120px;
+            font-weight: bold;
+            padding: 50px;
+            border: 50px dashed rgba(255, 0, 0, 0.7);
+            color: transparent;
+
+            background-image: url('../images/bg02.jpg');
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">你好啊</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>05_多重变换</title>
+    <style>
+        .outer {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+            /* 通过关键词调整变换原点 */
+            /* transform-origin: right bottom; */
+
+            /* 通过具体像素值调整变换原点 */
+            /* transform-origin: 50px 50px; */
+
+            /* 通过百分比调整变换原点 */
+            /* transform-origin: 25% 25%; */
+
+            /* 只给一个值 */
+            /* transform-origin:top; */
+
+            /* transform-origin: right top; */
+
+            /* 变换原点位置的改变对 旋转 有影响 */
+            /* transform: rotate(0deg); */
+
+            /* 变换原点位置的改变对 缩放 有影响 */
+            /* transform: scale(1.3); */
+
+            /* 变换原点位置的改变对 位移 没有影响 */
+            /* transform: translate(100px,100px) */
+        }
+        .test {
+            width: 50px;
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="test">你好啊</div>
+        </div>
+    </div>
+</body>
+</html>

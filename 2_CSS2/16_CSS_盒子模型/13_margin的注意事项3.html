@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>13_margin的注意事项3</title>
+    <style>
+        #d1 {
+            width: 400px;
+            height: 400px;
+            margin: 50px;
+            background-color: deepskyblue;
+        }
+        img {
+            margin: 50px;
+        }
+        .one {
+            background-color: skyblue;
+        }
+        .two {
+            background-color: orange;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 3000px;
+            margin-bottom: 3000px;
+        }
+        .three {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 对于行内元素来说，左右的margin是可以完美设置的，上下的margin设置后是无效的。 -->
+    <div id="d1">我是一个块级元素</div>
+    <div>我是一段文字</div>
+    <hr>
+    <img src="../images/悟空.jpg" alt="悟空">
+    <div>我是一段文字</div>
+    <hr>
+    <span class="one">人之初</span><span class="two">性本善</span><span class="three">性相近</span>
+    <div>我是一段文字</div>
+</body>
+</html>

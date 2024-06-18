@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>07_侧轴对齐方式_多行</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 900px;
+            background-color: #888;
+            margin: 0 auto;
+
+            /* 伸缩盒模型相关属性-start */
+
+            /* 将该元素变为了伸缩容器（开启了flex布局） */
+            display: flex;
+
+            /* 调整主轴方向，水平从左到右，默认 */
+            flex-direction: row;
+
+            /* 主轴换行方式，换行 */
+            flex-wrap: wrap;
+
+            /* 主轴的对齐方式，主轴的起始位置 */
+            justify-content: flex-start;
+
+            /* 侧轴的对齐方式（多行）侧轴的起始位置对齐 */
+            /* align-content: flex-start; */
+
+            /* 侧轴的对齐方式（多行）侧轴的结束位置对齐 */
+            /* align-content: flex-end; */
+
+            /* 侧轴的对齐方式（多行）侧轴的中间位置对齐 */
+            /* align-content: center; */
+
+            /* 侧轴的对齐方式（多行），伸缩项目之间的距离是相等的，且是边缘距离的2倍 */
+            /* align-content:space-around; */
+
+            /* 侧轴的对齐方式（多行），伸缩项目之间的距离是相等的，且边缘没有距离 */
+            /* align-content:space-between; */
+
+            /* 侧轴的对齐方式（多行），伸缩项目之间的距离是相等的 */
+            /* align-content:space-evenly; */
+
+            /* 侧轴的对齐方式（多行），拉伸，默认 */
+            /* align-content: stretch; */
+            
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        .inner2 {
+            height: 300px;
+        }
+        .inner3 {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">1</div>
+        <div class="inner inner2">2</div>
+        <div class="inner inner3">3</div>
+        <div class="inner">4</div>
+        <div class="inner">5</div>
+        <div class="inner">6</div>
+        <div class="inner">7</div>
+        <div class="inner">8</div>
+        <div class="inner">9</div>
+        <div class="inner">10</div>
+        <div class="inner">11</div>
+    </div>
+</body>
+</html>

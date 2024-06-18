@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>08_行高_注意事项</title>
+    <style>
+        /* 注意点1：行高过小会怎样？ —— 文字重叠，且最小值是0，不能为负数。 */
+        #d1 {
+            font-size: 40px;
+            background-color: skyblue;
+            line-height: 0px;
+        }
+
+        /* 注意点2：行高是可以继承的 */
+        #d2 {
+            font-size: 40px;
+            background-color: orange;
+            line-height: 1.5;
+        }
+        span {
+            font-size: 200px;
+            color: red;
+        }
+
+        /* 注意点3：line-height和height是什么关系 
+            设置了height，高度就是height的值。
+            没有设置height，高度就是line-height*行数
+        */
+        #d3 {
+            font-size: 40px;
+            background-color: yellowgreen;
+            line-height: 100px;
+        }
+
+        #d4 {
+            font-size: 40px;
+            background-color: skyblue;
+            line-height: 0px;
+        }
+
+        /* 行高的应用场景1：调整多行文字的间距 */
+        #d5 {
+            font-size: 40px;
+            background-color: skyblue;
+            line-height: 100px;
+        }
+
+        /* 行高的应用场景2：单行文字的垂直居中 */
+        #d6 {
+            font-size: 40px;
+            background-color: skyblue;
+            height: 300px;
+            line-height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div id="d1">atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术</div> -->
+    <!-- <div id="d2">atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu<span>尚硅谷</span>让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术</div> -->
+    <!-- <div id="d3">atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术</div> -->
+    <!-- <div id="d4">atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术</div> -->
+    <!-- <div id="d5">atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术atguigu尚硅谷让天下没有难学的技术</div> -->
+    <div id="d6">atguigu尚硅谷让天下没有难学的技术x</div>
+</body>
+</html>

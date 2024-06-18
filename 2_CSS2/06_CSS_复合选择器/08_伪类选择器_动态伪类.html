@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>08_伪类选择器_动态伪类</title>
+    <style>
+        /* 选中的是没有访问过的a元素 */
+        a:link {
+            color: orange;
+        }
+        /* 选中的是访问过的a元素 */
+        a:visited {
+            color: gray;
+        }
+        /* 选中的是鼠标悬浮状态的a元素 */
+        a:hover {
+            color: skyblue;
+        }
+        /* 选中的是激活状态的a元素 */
+        a:active {
+            color: green;
+        }
+        /* 选中的是鼠标悬浮的span元素 */
+        span:hover {
+            color: green;
+        }
+        /* 选中的是激活的span元素 */
+        span:active {
+            color: red;
+        }
+        /* 选中的是获取焦点状态的input元素、获取焦点状态的select元素 */
+        input:focus,select:focus {
+            color: orange;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">去百度</a>
+    <a href="https://www.jd.com">去京东</a>
+    <span>尚硅谷</span>
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+    <select>
+        <option value="beijing">北京</option>
+        <option value="shanghai">上海</option>
+    </select>
+</body>
+</html>

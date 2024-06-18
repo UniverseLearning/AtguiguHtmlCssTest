@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>09_伪类选择器_结构伪类_1</title>
+    <style>
+        /* 选中的是div的第一个儿子p元素（按照所有兄弟计算的） —— 看结构1 */
+        /* div>p:first-child {
+            color: red;
+        } */
+
+        /* 选中的是div的第一个儿子p元素（按照所有兄弟计算的） —— 看结构2 */
+        /* div>p:first-child {
+            color: red;
+        } */
+
+        /* 选中的是div的后代p元素，且p的父亲是谁无所谓，但p必须是其父亲的第一个儿子（按照所有兄弟计算的） —— 看结构3 */
+        /* div p:first-child {
+            color: red;
+        } */
+
+        /* 选中的是p元素，且p的父亲是谁无所谓，但p必须是其父亲的第一个儿子（按照所有兄弟计算的） —— 看结构3 */
+        p:first-child {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 结构1 -->
+    <!-- <div>
+        <p>张三：98分</p>
+        <p>李四：88分</p>
+        <p>王五：78分</p>
+        <p>赵六：68分</p>
+    </div> -->
+
+    <!-- 结构2 -->
+    <!-- <div>
+        <span>张三：98分</span>
+        <p>李四：88分</p>
+        <p>王五：78分</p>
+        <p>赵六：68分</p>
+    </div> -->
+
+    <!-- 结构3 -->
+    <p>测试1</p>
+    <div>
+        <p>测试2</p>
+        <marquee>
+            <p>测试3</p>
+            <p>张三：98分</p>
+        </marquee>
+        <p>李四：88分</p>
+        <p>王五：78分</p>
+        <p>赵六：68分</p>
+    </div>
+</body>
+</html>
